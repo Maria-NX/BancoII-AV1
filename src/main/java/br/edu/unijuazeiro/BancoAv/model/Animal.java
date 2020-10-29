@@ -1,4 +1,4 @@
-package br.edu.unijuazeiro.BancoAv.models;
+package br.edu.unijuazeiro.BancoAv.model;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
