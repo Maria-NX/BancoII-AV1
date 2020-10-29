@@ -23,7 +23,7 @@ public class Dono {
 
     @Id
     @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "genDono")
-    @SequenceGenerator(sequenceName = "generatorDono", name="genDono",
+    @SequenceGenerator(sequenceName = "seqDono", name="genDono",
         initialValue = 2, allocationSize = 2)
     private Integer id;
 
@@ -38,6 +38,5 @@ public class Dono {
     @OneToOne(cascade = CascadeType.ALL, fetch = FetchType.EAGER) 
     @JoinColumn
     private Animal animal;
-
 
 }

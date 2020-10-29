@@ -18,7 +18,7 @@ import lombok.NoArgsConstructor;
 public class Animal {
     @Id
     @GeneratedValue(generator = "genAnimal", strategy = GenerationType.SEQUENCE)
-    @SequenceGenerator(sequenceName = "generatorAnimal", name = "genAnimal",
+    @SequenceGenerator(sequenceName = "seqrAnimal", name = "genAnimal",
         initialValue = 2, allocationSize = 10)
     private Integer id_animal;
 
@@ -26,6 +26,5 @@ public class Animal {
     private String nome;
 
     private String raca;
-
 
 }
